@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featured-pizza {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pizza-item {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.pizza-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.centered-image {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #ff5500;
+  /* Change the border properties as needed */
+  border-radius: 5px;
+}
+
+/* Form Styles */
+.order-form {
+    text-align: center;
+}
+
+.order-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-form label {
+    margin: 10px 0;
+}
+
+.order-form input[type="text"],
+.order-form input[type="number"],
+.order-form input[type="submit"] {
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.order-form input[type="submit"] {
+    background-color: #ff5500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-form input[type="submit"]:hover {
+    background-color: #e04400;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul li {
+    margin-right: 10px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Responsive styles here */
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    .intro {
+        margin-bottom: 20px;
+    }
+
+    .pizza-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .order-form input[type="text"],
+    .order-form input[type="number"],
+    .order-form input[type="submit"] {
+        width: 80%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

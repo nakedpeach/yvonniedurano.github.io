@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pizza Order Form</title>
+  <style>
+    form fieldset {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    body{
+      background-color: lightpink;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pizza Order Form</h1>
+  <form id="pizza-order-form">
+    <fieldset>
+      <legend>Personal Information</legend>
+        <input type="text" id="firstName" name="firstName" required><label for="firstName">First Name:</label><br><br>
+        <input type="text" id="lastName" name="lastName" required><label for="lastName">Last Name:</label><br><br>
+        <input type="text" id="address" name="address" required><label for="address">Address:</label><br><br>
+        <input type="tel" id="contactNumber" name="contactNumber" required><label for="contactNumber">Contact Number:</label><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Order Details</legend>
+        <input type="number" id="quantity" name="quantity" min="1" required><label for="quantity">Quantity:</label><br><br>
+        <select id="pizzaType" name="pizzaType" required>
+          <option value="">-- Select Pizza Type --</option>
+          <option value="Cheese">Cheese</option>
+          <option value="Double Pepperoni"> Double Pepperoni</option>
+          <option value="Ham and Crab Stick">Ham and Crab Stick</option>
+          <option value="Deluxe">Deluxe</option>
+          <option value="Hawaiian">Hawaiian</option>
+          <option value="Bacon and Sausage">Bacon and Sausage</option>
+        </select><label for="pizzaType">Pizza Type:</label><br><br>
+        <input type="text" id="extraToppings" name="extraToppings"><label for="extraToppings">Extra Toppings (comma-separated):</label><br><br>
+        <label><input type="radio" id="deliveryOption" name="deliveryOption" value="pickup" required> Pickup</label>
+        <label><input type="radio" id="deliveryOption" name="deliveryOption" value="delivery"> Delivery</label><label for="deliveryOption">Delivery Option:</label><br><br>
+        <select id="paymentMethod" name="paymentMethod" required>
+          <option value="">-- Select Payment Method --</option>
+          <option value="cash">Cash</option>
+          <option value="credit">Credit Card</option>
+        </select><label for="paymentMethod">Payment Method:</label><br><br>
+        <textarea id="specialInstructions" name="specialInstructions"></textarea><label for="specialInstructions">Special Instructions:</label><br><br>
+        <button type="submit">Place Order</button>
+    </fieldset>
+  </form>
+  <script>
+   
+  </script>
+</body>
+</html>

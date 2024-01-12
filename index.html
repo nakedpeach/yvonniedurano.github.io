@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Brianne's Pizza Delivery</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: deeppink;
+    color: #333;
+    }
+        /* Header Styles */
+    header {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo img {
+      width: 150px;
+      height: auto;
+      
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+     
+}
+      
+      nav ul li {
+        margin-right: 20px;
+      }
+      
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      
+      /* Section Styles */
+      section {
+        padding: 50px 20px;
+      }
+      
+      .intro {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      .featured-pizza {
+        display: flex;
+justify-content: space-around;
+        flex-wrap: wrap;
+        }
+        
+        .pizza-item {
+          text-align: center;
+          margin-bottom: 20px;
+          width: 250px;
+          border: 1px solid #ccc;
+          padding: 20px;
+          border-radius: 5px;
+          background-color: #fff;
+        }
+        
+        .pizza-item img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+          border-radius: 5px;
+        }
+        
+        
+        .order-form {
+          text-align: center;
+}
+          
+          .order-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .order-form label {
+            margin: 10px 0;
+          }
+          
+          .order-form input[type="text"],
+          .order-form input[type="number"],
+          .order-form input[type="submit"] {
+            width: 200px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          }
+          
+          .order-form input[type="submit"] {
+            background-color: #ff5500;
+            color: #fff;
+border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            }
+            
+            .order-form input[type="submit"]:hover {
+              background-color: #e04400;
+            }
+            
+            /* Footer Styles */
+            footer {
+              background-color: #333;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+            }
+            
+            .contact-info p {
+              margin: 5px 0;
+            }
+            
+            .social-media ul {
+              padding: 0;
+              display: flex;
+justify-content: center;
+}
+
+.social-media ul li {
+    margin-right: 10px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 150px;
+        
+    }
+
+    nav ul li {
+margin-right: 10px;
+      }
+      
+      section {
+        padding: 30px 10px;
+      }
+      
+      .intro {
+        margin-bottom: 20px;
+      }
+      
+      .pizza-item {
+        width: 10;
+      }
+      nav ul {
+        background-color: grey;
+        box-shadow: 0px 0px 15px 15px dimgray;
+      }
+     .pizza-item{
+       text-align: center;
+     }
+
+</style>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="pizza logo.png" alt="Pizza Delivery Logo">
+    </div>
+    <nav>
+        <ul>
+          
+            <li style="background-color: aqua"><a href="About.html">About</a></li>
+            <li style="background-color: lime"><a href="Menu.html">Menu</a></li>
+            <li style="background-color: deeppink"><a href="Order.html">Order</a></li>
+            <li style="background-color: tomato"><a href="Locations.html">Locations</a></li>
+            <li style="background-color: orangered"><a href="js.html">More</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="intro">
+        <h1>Welcome to Brianne's Pizza Delivery!</h1>
+        <p>Satisfy your cravings with our mouthwatering pizzas, crafted with the frehiest ingredients and baked to perfection.<br>
+        Explore our delicious range of pizzas and place your order online.</p>
+        </div>
+        <div class="featured-pizzas">
+          <h2>Featured Pizzas</h2>
+          <div class="pizza-grid">
+            <div class="pizza-item">
+              <img src="pizza1.png" height="300px" width="100px" alt="Cheese Pizza">
+             <h3>Cheese Perfection</h3>
+                <p>Loaded with cheese, melted mozzarella cheese, and tomato sauce.</p>
+        
+            </div>
+            </div>
+            </div>
+            </section>
+        
+          
+<footer>
+    <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: info@pizzadelivery.com</p>
+        <p>Phone: 123-456-7890</p>
+    </div>
+    <div class="social-media">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="https://facebook.com/pizzadelivery">Facebook</a></li>
+            <li><a href="https://twitter.com/pizzadelivery">Twitter</a></li>
+            
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
